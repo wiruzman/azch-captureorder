@@ -49,10 +49,5 @@ spec:
               secretKeyRef:
                 name: mongodb
                 key: mongoPassword
-          - name: CHALLENGEAPPINSIGHTS_KEY
-            valueFrom:
-              secretKeyRef:
-                name: insightskey
-                key: insightsKey
           ports:
           - containerPort: 80
